@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>subscribe</title>
+    <link rel="stylesheet" href="./css/subscribe.css" />
+    <link rel="stylesheet" href="./css/popup.css">
+  </head>
+  <body>
+    <div class="pop_up" id="pop_up">
+      <div class="pop_up_container">
+        <div class="pop_up_body" id="pop_up_body">
+          <h2>Попробуйте бесплатно</h2>
+          <form id="subscription_form" action="">
+            <input type="text" id="last_name" class="field" placeholder="Фамилия" required />
+            <input type="text" id="first_name" class="field" placeholder="Имя" required />
+            <input type="email" id="email" class="field" placeholder="E-mail" required />
+            <button id="submit_button" class="button3">Оформить подписку</button>
+          </form>
+          <div id="pop_up_close" class="pop_up_close">&#10006;</div>
+        </div>
+      </div>
+    </div>
+      <section>
+      <div class="container">
+          <div class="title">
+              <h1>Попробуйте нашу подписку! Первый месяц бесплатно</h1>
+          </div>
+          <div class="blocks">
+              <a href="#" class="open_pop_up"> 
+                  <div class="block1">
+                      <div class="inner-block">
+                          <div class="title2">
+                              <h3>Premium</h3>
+                          </div>
+                          <div class="list">
+                              <ul>
+                                  <li>1 подтвержденный Premium-аккаунт</li>
+                                  <li>Отмена в любой момент</li>
+                              </ul>
+                          </div>
+                          <div class="price">
+                              <h4>7 BYN</h4>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              <a href="#" class="open_pop_up"> 
+                  <div class="block2">
+                      <div class="inner-block">
+                          <div class="title2">
+                              <h3>Premium для двоих</h3>
+                          </div>
+                          <div class="list">
+                              <ul>
+                                  <li>2 Premium-аккаунта</li>
+                                  <li>Отмена в любой момент</li>
+                              </ul>
+                          </div>
+                          <div class="price">
+                              <h4>12 BYN</h4>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </section>
+  <script>
+    const popUp = document.getElementById("pop_up"); 
+
+const openPopUps = document.querySelectorAll(".open_pop_up");
+
+openPopUps.forEach(function(openPopUp) {
+    openPopUp.addEventListener("click", function (e) {
+        e.preventDefault();
+        popUp.classList.add("active");
+    });
+});
+
+const closePopUp = document.getElementById("pop_up_close");
+
+closePopUp.addEventListener("click", () => {
+    popUp.classList.remove("active");
+});
+
+// Получаем ссылки на элементы формы
+  const form = document.getElementById('subscription_form');
+  const lastNameInput = document.getElementById('last_name');
+  const firstNameInput = document.getElementById('first_name');
+  const emailInput = document.getElementById('email');
+  const submitButton = document.getElementById('submit_button');
+
+  // Функция проверки валидности электронной почты
+  function isValidEmail(email) {
+    // Простая проверка с использованием регулярного выражения
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  }
+
+  // Функция, проверяющая, заполнена ли форма и валиден ли адрес электронной почты
+  function isFormValid() {
+    const isLastNameValid = lastNameInput.value !== '';
+    const isFirstNameValid = firstNameInput.value !== '';
+    const isEmailValid = isValidEmail(emailInput.value);
+
+    return isLastNameValid && isFirstNameValid && isEmailValid;
+  }
+
+  // Функция, включающая или отключающая кнопку отправки и отображающая alert при невалидном email
+  function toggleSubmitButton(event) {
+    event.preventDefault(); // Предотвращаем отправку формы
+
+    const isFormValidResult = isFormValid();
+    submitButton.disabled = !isFormValidResult;
+
+    if (!isFormValidResult && emailInput.value !== '') {
+      alert('Введите корректный E-mail');
+    } else if (isFormValidResult) {
+      alert('Подписка оформлена успешно');
+      form.reset(); // Сбрасываем значения полей формы
+      popUp.style.display = 'none'; // Скрываем форму
+    }
+  }
+
+  // Обработчики событий изменения значений полей формы и отправки формы
+  lastNameInput.addEventListener('input', toggleSubmitButton);
+  firstNameInput.addEventListener('input', toggleSubmitButton);
+  emailInput.addEventListener('input', toggleSubmitButton);
+  form.addEventListener('submit', toggleSubmitButton);  </script>
+    </body>
+</html>

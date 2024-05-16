@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery>
+    <image>
+        <path>sitcoms\fisher.webp</path>
+        <caption>Фишер</caption>
+        <title></title>
+        <age>18+</age>
+    </image>
+    <image>
+        <path>sitcoms\во все тяжкие.webp</path>
+        <caption>Во все тяжкие</caption>
+        <age>18+</age>
+    </image>
+    <image>
+        <path>sitcoms\игра престолов.webp</path>
+        <caption>Игра престолов</caption>
+        <age>18+</age>
+
+    </image>
+    <image>
+        <path>sitcoms\кухня.webp</path>
+        <caption>Кухня</caption>
+        <age>16+</age>
+    </image>
+    <image>
+        <path>sitcoms\метод.webp</path>
+        <caption>Метод</caption>
+        <age>18+</age>
+    </image>
+    <image>
+        <path>sitcoms\отель элеон.webp</path>
+        <caption>Отель Элеон</caption>
+        <age>16+</age>
+    </image>
+    <image>
+        <path>sitcoms\отчаянные домохозяйки.webp</path>
+        <caption>Отчаянные домохозяйки</caption>
+        <age>16+</age>
+    </image>
+    <image>
+        <path>sitcoms\пацаны.webp</path>
+        <caption>Пацаны</caption>
+        <age>18+</age>
+    </image>
+    <image>
+        <path>sitcoms\постучись в мою дверь.webp</path>
+        <caption>Постучись в мою дверь</caption>
+        <age>14+</age>
+    </image>
+    <image>
+        <path>sitcoms\слово пацана.webp</path>
+        <caption>Слово пацана </caption>
+        <age>16+</age>
+    </image>
+    <image>
+        <path>sitcoms\трудные подростки.webp</path>
+        <caption>Трудные подростки</caption>
+        <age>16+</age>
+    </image>
+    <image>
+        <path>sitcoms\эйфория.webp</path>
+        <caption>Эйфория</caption>
+        <age>16+</age>
+    </image>
+</gallery>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>avengers</title>
+    <link rel="stylesheet" href="./css/avengers.css" />
+    <link rel="stylesheet" href="./css/scrollToTop.css" />
+    <link rel="stylesheet" href="./css/burger.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/popup.css">
+  </head>
+  <body>
+    <div class="pop_up" id="pop_up">
+      <div class="pop_up_container">
+        <div class="pop_up_body" id="pop_up_body">
+          <h2>Вход</h2>
+          <form action="">
+            <input type="text" class="field" placeholder="E-mail" />
+            <input type="text" class="field" placeholder="Пароль" />
+            <button class="button3">Войти</button>
+          </form>
+          <div id="pop_up_close" class="pop_up_close">&#10006;</div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="menu">
+            <img src="./icons/logo.png" class="logo" alt="logo" />
+            <nav class="nav">
+              <ul>
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    style="
+                      display: inline-block;
+                      border-bottom: 3px solid #3d277d;
+                    "
+                    class="nav__link"
+                    href="catalog.html"
+                    >Каталог</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="subscribe.html">Подписка</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="button">
+              <a href="#" id="open_pop_up"
+                ><img src="./icons/button.svg" class="button_enter"
+              /></a>
+            </div>          </div>
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+      <img class="line" src="./icons/line.svg" alt="line" />
+    </header>
+
+    <main>
+      <section>
+        <div class="stt stt__circle__black"></div>
+        <div class="container">
+          <div class="wrapper">
+            <div class="preview">
+              <div class="description">
+                <div class="title">
+                  <h1>
+                    Мстители: <br />
+                    Война бесконечности
+                  </h1>
+                </div>
+                <div class="about_film">
+                  <h2>О фильме</h2>
+                </div>
+                <div class="list">
+                  <ul>
+                    <li>
+                      Год производства
+                      <div class="list_asses">
+                        <span>2018</span>
+                      </div>
+                    </li>
+                    <li>
+                      Страна
+                      <div class="list_asses">
+                        <span>США</span>
+                      </div>
+                    </li>
+                    <li>
+                      Жанр
+                      <div class="list_asses">
+                        <span>фантастика</span>
+                      </div>
+                    </li>
+                    <li>
+                      Режисер
+                      <div class="list_asses">
+                        <span>Энтони Руссо</span>
+                      </div>
+                    </li>
+                    <li>
+                      Сценарий
+                      <div class="list_asses">
+                        <span>Стэн Ли</span>
+                      </div>
+                    </li>
+                    <li>
+                      Оператор
+                      <div class="list_asses">
+                        <span>Трент Опалок</span>
+                      </div>
+                    </li>
+                    <li>
+                      Композитор
+                      <div class="list_asses">
+                        <span>Алан Сильвестри</span>
+                      </div>
+                    </li>
+                    <li>
+                      Бюджет
+                      <div class="list_asses">
+                        <span>$321 000 000</span>
+                      </div>
+                    </li>
+                    <li>
+                      Возраст
+                      <div class="list_asses">
+                        <span>18+</span>
+                      </div>
+                    </li>
+                    <li>
+                      Время
+                      <div class="list_asses">
+                        <span>149 мин.</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="img_video">
+                <div class="film">
+                  <img src="./film/avengers.webp" alt="" />
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="feature-img">
+                      <img src="./film/feature_avengers.png" alt="" />
+                      <img
+                        src="./icons/play.png"
+                        class="play-btn"
+                        alt=""
+                        onclick="playVideo('./film/Мстители__Война_бесконечности_–.mp4')"
+                      />
+                    </div>
+
+                    <div class="video-player" id="videoPlayer">
+                      <video
+                        width="100%"
+                        controls
+                        src="./film/Мстители__Война_бесконечности.mp4"
+                        type="video/mp4"
+                        id="myVideo"
+                      ></video>
+                      <img
+                        src="./icons/cclose.png"
+                        class="close-btn"
+                        alt=""
+                        onclick="stopVideo()"
+                      />
+                    </div>
+                    <h4>Трейлер (дублированный)</h4>
+                  </div>
+                </div>
+                <script>
+                  var videoPlayer = document.getElementById("videoPlayer");
+                  var myVideo = document.getElementById("myVideo");
+
+                  function stopVideo() {
+                    videoPlayer.style.display = "none";
+                  }
+
+                  function playVideo(file) {
+                    myVideo.src = file;
+                    videoPlayer.style.display = "block";
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="plot">
+            <div class="title_plot"><h3>Сюжет</h3></div>
+
+            <div class="text">
+              <div class="paragraph1">
+                <p>
+                  Пока Мстители и их союзники продолжают защищать мир от
+                  различных опасностей, с которыми не смог бы справиться один
+                  супергерой, новая угроза возникает из космоса: Танос.
+                </p>
+              </div>
+              <div class="paragraph2">
+                <p>
+                  Межгалактический тиран преследует цель собрать все шесть
+                  Камней Бесконечности - артефакты невероятной силы, с помощью
+                  которых можно менять реальность по своему желанию.
+                </p>
+              </div>
+              <div class="paragraph3">
+                <p>
+                  Всё, с чем Мстители сталкивались ранее, вело к этому моменту –
+                  судьба Земли никогда ещё не была столь неопределённой.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="rating">
+            <div class="title_rating"><h3>Рейтинг фильма</h3></div>
+            <div class="stars">
+              <ul>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">1</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">2</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">3</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">4</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">5</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">6</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">7</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 28.png" alt="" />
+                    <div class="rating_assess">8</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 9.png" alt="" />
+                    <div class="rating_assess">9</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rating_star">
+                    <img src="./icons/Star 9.png" alt="" />
+                    <div class="rating_assess">10</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <svg
+        width="1265"
+        height="6"
+        viewBox="0 0 1265 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.56347e-05 1L1275 4.52209"
+          stroke="url(#paint0_linear_545_34)"
+          stroke-width="2"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_545_34"
+            x1="-0.0397158"
+            y1="19"
+            x2="1274.96"
+            y2="22.522"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#B592ED" />
+            <stop offset="1" stop-color="#7951EC" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="container">
+        <div class="contact">
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="subscribe.html">Подписка</a></li>
+              <li><a href="#">Служба поддержки</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="icons">
+          <nav>
+            <div class="telegram">
+              <img src="./icons/telegram.png" alt="" />
+            </div>
+            <div class="instagram">
+              <img src="./icons/instagram.png" alt="" />
+            </div>
+            <div class="vk">
+              <img src="./icons/vk.png" alt="" />
+            </div>
+            <div class="email">
+              <img src="./icons/email.png" alt="" />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/scrollToTop.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/popup.js"></script>
+  </body>
+</html>

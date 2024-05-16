@@ -1,0 +1,201 @@
+body {
+  background: linear-gradient(
+    114.62deg,
+    rgb(82, 60, 213) 11.284%,
+    rgb(181, 146, 237) 69.676%
+  );
+  font-family: Century Gothic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  overflow-x: hidden;
+} 
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+
+.sitcoms > img,
+.films > img,
+.kids > img {
+  width: 393px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.sitcom_text,
+.film_text,
+.kids_text {
+  position: relative;
+  text-align: center;
+}
+
+.sitcoms_title,
+.films_title,
+.kids_title {
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: normal;
+  color: #fff;
+  font-size: 28px;
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 0 36px;
+}
+
+
+
+h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: normal;
+  padding: 28px 0 0 0px;
+}
+
+.svg {
+  padding: 0 5px 5px 0;
+}
+
+.list ol {
+  display: flex;
+  flex-direction: column;
+  list-style-type: decimal-leading;
+  color: #fff;
+  font-size: 34px;
+  line-height: 80px;
+  padding: 20px 0 0 80px;
+}
+
+@media (max-width: 1200px) {
+  .sitcoms > img,
+  .films > img,
+  .kids > img {
+    width: 30vw;
+    border-radius: 2vw;
+  }
+  .sitcoms_title,
+  .films_title,
+  .kids_title {
+    font-size: 2vw;
+    bottom: 2.5vw;
+  }
+  .list ol {
+    font-size: 3vw;
+    line-height: 6vw;
+    padding: 2vw 0 0 4vw;
+  }
+
+  .list__img {
+    width: 3vw;
+  }
+
+  h1{
+    font-size: 3vw;
+  }
+  .title {
+    padding: 0 0 0 4vw;
+  }
+
+  .arrow {
+    height: 3.5vw;
+  }
+  
+}
+
+
+@media (max-width: 730px) {
+  .sitcoms > img,
+  .films > img,
+  .kids > img {
+    width: 80vw;
+    border-radius: 4vw;
+  }
+
+  .category {
+    flex-direction: column;
+    gap: 5vw;
+  }
+  .sitcoms_title,
+  .films_title,
+  .kids_title {
+    font-size: 6vw;
+    bottom: 5vw;
+  }
+
+  .list ol {
+    font-size: 3.2vw;
+    line-height: 6vw;
+    padding: 2vw 0 0 2vw;
+  }
+
+  h1{
+    font-size: 3.5vw;
+  }
+  .title {
+    padding: 0 0 0 6vw;
+  }
+
+  .arrow {
+    height: 3.5vw;
+  }
+
+  .list__img {
+    width: 3vw;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .list ol {
+    font-size: 3.5vw;
+    line-height: 7vw;
+    padding: 2vw 0 0 4vw;
+  }
+  h1{
+    font-size: 4vw;
+  }
+
+  .arrow {
+    height: 4vw;
+  }
+
+  .list__img {
+    width: 4.5vw;
+  }
+
+}
+
+@media(max-width: 450px) {
+  .list ol {
+    font-size: 4vw;
+    line-height: 8vw;
+    padding: 2vw 0 0 4vw;
+  }
+  h1{
+    font-size: 5vw;
+  }
+
+  .arrow {
+    height: 5vw;
+  }
+  
+}
+

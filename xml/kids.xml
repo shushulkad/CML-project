@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery>
+    <image>
+        <path>kids\coco.webp</path>
+        <caption>Тайна Коко</caption>
+    </image>
+    <image>
+        <path>kids\madagascar.webp</path>
+        <caption>Мадагаскар</caption>
+    </image>
+    <image>
+        <path>kids\monsters.webp</path>
+        <caption>Корпорация монстров</caption>
+    </image>
+    <image>
+        <path>kids\zootopia.webp</path>
+        <caption>Зверополис</caption>
+    </image>
+    <image>
+        <path>kids\головоломка.webp</path>
+        <caption>Головоломка</caption>
+    </image>
+    <image>
+        <path>kids\принцесса и лягушка.webp</path>
+        <caption>Принцесса и лягушка</caption>
+    </image>
+    <image>
+        <path>kids\рапунцель.webp</path>
+        <caption>Рапунцель</caption>
+    </image>
+    <image>
+        <path>kids\сказочный патруль.webp</path>
+        <caption>Сказочный патруль</caption>
+    </image>
+    <image>
+        <path>kids\холодное сердце.webp</path>
+        <caption>Холодное сердце</caption>
+    </image>
+    <image>
+        <path>kids\храбрая сердцем.webp</path>
+        <caption>Храбрая сердцем </caption>
+    </image>
+    <image>
+        <path>kids\шрэк.webp</path>
+        <caption>Шрэк</caption>
+    </image>
+    <image>
+        <path>kids\ми-ми-мишки.webp</path>
+        <caption>Ми-ми-мишки</caption>
+    </image>
+</gallery>

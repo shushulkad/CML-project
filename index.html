@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="./css/scrollToTop.css" />
+    <link rel="stylesheet" href="./css/burger.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/popup.css" />
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="pop_up" id="pop_up">
+      <div class="pop_up_container">
+        <div class="pop_up_body" id="pop_up_body">
+          <h2>Вход</h2>
+          <form action="">
+            <input type="email" class="field" placeholder="E-mail" />
+            <input type="password" class="field" placeholder="Пароль" />
+            <button id="button_enter" class="button3">Войти</button>
+          </form>
+          <div id="pop_up_close" class="pop_up_close">&#10006;</div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="menu">
+            <img src="./icons/logo.png" class="logo" />
+            <nav class="nav">
+              <ul>
+                <li class="nav__item">
+                  <a
+                    style="
+                      display: inline-block;
+                      border-bottom: 3px solid #3d277d;
+                    "
+                    class="nav__link"
+                    href=""
+                    >Главная</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="nav__item">
+                  <a id="subscribe_link " class="nav__link" href="subscribe.html">Подписка</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="button">
+              <a href="#" id="open_pop_up"
+                ><img src="./icons/button.svg" id="" class="button_enter"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="wrapper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide_1">
+                  <div class="slider">
+                    <div class="gradient">
+                      <svg
+                        width="1275"
+                        height="603"
+                        viewBox="0 0 1275 603"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="1275"
+                          height="603"
+                          fill="url(#paint0_linear_545_21)"
+                          fill-opacity="0.6"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_545_21"
+                            x1="1275"
+                            y1="-5.47774e-05"
+                            x2="462.05"
+                            y2="115.622"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#D9D9D9" />
+                            <stop offset="0.492933" stop-color="#717070" />
+                            <stop offset="1" stop-color="#0D005C" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <div class="collage">
+                      <img src="./slider/collage.png" alt="" />
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        Онлайн кинотеатр: волшебство кино в удобстве вашего
+                        дома!
+                      </p>
+                    </div>
+
+                    <div class="text2">
+                      <p>Смотрите в приложении VOCHKI</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide_2">
+                  <img src="./slider/оппенгеймер.webp" alt="" />
+                </div>
+                <div class="swiper-slide slide_3">
+                  <img src="./slider/храбрая сердцем.webp" alt="" />
+                </div>
+                <div class="swiper-slide slide_4">
+                  <img src="./slider/фишер.jpg" alt="" />
+                </div>
+                <div class="swiper-slide slide_5">
+                  <img src="./slider/kinopoisk.ru-Tangled-1426663.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="title1">
+            <h1 id="subscribe">Подписка</h1>
+            <svg
+              class="arrow"
+              width="20"
+              height="49"
+              viewBox="0 0 20 49"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8977 24.2937L1.36193e-05 48.4203L10.9719 24.275L0.204538 3.28303e-06L19.8977 24.2937Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="subscribe">
+            <div class="card1">
+              <img src="./cards/deadpool.jpg" alt="ДиКаприо" />
+              <div class="card1__text">
+                <h2 class="card1__title">В подписку входит всё</h2>
+                <p class="card1__description">
+                  Мы ценим отличное качество картинки и звука. Как ещё смотреть
+                  сериалы, как не в идеальном разрешении?
+                </p>
+              </div>
+            </div>
+
+            <div class="card2">
+              <img src="./cards/леонардо.png" alt="ДиКаприо" />
+              <div class="card2__text">
+                <h2 class="card2__title">Качество Full HD 1080</h2>
+                <p class="card2__description">
+                  Мы ценим отличное качество картинки и звука. Как ещё смотреть
+                  сериалы, как не в идеальном разрешении?
+                </p>
+              </div>
+            </div>
+
+            <div class="card3">
+              <img src="./cards/детям.png" alt="ДиКаприо" />
+              <div class="card3__text">
+                <h2 class="card3__title">Безопасный детский профиль</h2>
+                <p class="card3__description">
+                  Мы ценим безопасность маленьких зрителей. У нас есть
+                  безопасный профиль с лучшим контентом для детей.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button2">
+          <a href="subscribe.html"> <img src="./cards/button2.png" alt="" /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <img src="./icons/line.svg" />
+
+        <div class="contact">
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="subscribe.html">Подписка</a></li>
+              <li><a href="#">Служба поддержки</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <nav>
+            <div class="telegram">
+              <img src="./icons/telegram.png" alt="" />
+            </div>
+            <div class="instagram">
+              <img src="./icons/instagram.png" alt="" />
+            </div>
+            <div class="vk">
+              <img src="./icons/vk.png" alt="" />
+            </div>
+            <div class="email">
+              <img src="./icons/email.png" alt="" />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/scrollToTop.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/autorization.js"></script>
+  </body>
+</html>

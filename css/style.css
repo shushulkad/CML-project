@@ -1,0 +1,302 @@
+body {
+  background: linear-gradient(
+    114.62deg,
+    rgb(82, 60, 213) 11.284%,
+    rgb(181, 146, 237) 69.676%
+  );
+  font-family: Century Gothic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+
+.slider {
+  display: flex;
+}
+
+.collage {
+  width: 1265px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  position: absolute;
+}
+
+.gradient {
+  display: flex;
+  position: relative;
+  width: 1265px;
+}
+
+.text {
+  display: flex;
+  width: 586px;
+  height: 173px;
+  z-index: 2;
+  position: absolute;
+  align-self: center;
+  padding: 0 0 100px 15px;
+  color: #fff;
+  font-size: 38px;
+  text-align: left;
+}
+
+.text2 {
+  display: flex;
+  width: 465px;
+  height: 32px;
+  z-index: 2;
+  position: absolute;
+  align-self: center;
+  padding: 250px 0 0 15px;
+  color: #fff;
+  font-size: 26px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+}
+
+.subscribe > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  position: relative;
+}
+
+.title1 {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 36px 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: normal;
+  padding: 20px 5px 0 80px;
+}
+
+.card1 {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  width: 750px;
+  height: 410px;
+}
+
+.card1 > img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.card2 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  height: 410px;
+  background: #fff;
+}
+
+.card2 > img {
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+}
+
+.card3 {
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  width: 750px;
+  height: 410px;
+}
+
+.card3 > img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.card2__text,
+.card3__text,
+.card1__text {
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card2__title,
+.card3__title,
+.card1__title {
+  text-align: center;
+  color: #523cd5;
+  font-size: 38px;
+}
+.card2__description,
+.card3__description,
+.card1__description {
+  font-size: 30px;
+  color: #523cd5;
+  text-align: center;
+}
+.button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 30px 0;
+}
+
+@media(max-width: 850px) {
+  .card1 {
+    border-radius: 3vw;
+    width: 80vw;
+    height: 45vw;
+  }
+  
+  .card1 > img {
+    border-radius: 3vw;
+  }
+  
+  .card2 {
+    border-radius: 3vw;
+    width: 80vw;
+    height: 45vw;
+  }
+  
+  .card2 > img {
+    border-radius: 3vw;
+  }
+  
+  .card3 {
+    border-radius: 3vw;
+    width: 80vw;
+    height: 45vw;
+  }
+  
+  .card3 > img {
+    border-radius: 3vw;
+  }
+  
+
+.card2__title,
+.card3__title,
+.card1__title {
+  font-size: 4vw;
+}
+.card2__description,
+.card3__description,
+.card1__description {
+  font-size: 3.5vw;
+}
+
+}
+
+@media(max-width: 740px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .arrow {
+    height: 5vw;
+  }
+
+  .card2__title,
+.card3__title,
+.card1__title {
+  font-size: 4vw;
+}
+.card2__description,
+.card3__description,
+.card1__description {
+  font-size: 3vw;
+  padding-bottom: 5vw ;
+}
+
+.button2 > img {
+  width: 55vw;
+}
+}
+
+@media(max-width: 610px) {
+  .card1 {
+    border-radius: 3vw;
+    width: 90vw;
+    height: 55vw;
+  }
+  
+  .card1 > img {
+    border-radius: 3vw;
+  }
+  
+  .card2 {
+    border-radius: 3vw;
+    width: 90vw;
+    height: 55vw;
+  }
+  
+  .card2 > img {
+    border-radius: 3vw;
+  }
+  
+  .card3 {
+    border-radius: 3vw;
+    width: 90vw;
+    height: 55vw;
+  }
+  
+  .card3 > img {
+    border-radius: 3vw;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  .arrow {
+    height: 7vw;
+  }
+
+  .card2__title,
+.card3__title,
+.card1__title {
+  font-size: 5vw;
+}
+.card2__description,
+.card3__description,
+.card1__description {
+  font-size: 3.5vw;
+}
+}
+
+@media(max-width: 550px) {
+
+  
+  .card1 > img {
+    width: 45vw;
+  }
+  .card3 > img {
+    width: 45vw;
+  }
+  h1 {
+    padding-left: 7vw;
+  }
+
+}

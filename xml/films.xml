@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery>
+    <image>
+        <path>film\avengers.webp</path>
+        <caption>Мстители</caption>
+    </image>
+    <image>
+        <path>film\oppenheimer.webp</path>
+        <caption>Оппенгеймер</caption>
+    </image>
+    <image>
+        <path>film\fightclub.webp</path>
+        <caption>Бойцовский клуб</caption>
+    </image>
+    <image>
+        <path>film\барби.webp</path>
+        <caption>Барби</caption>
+    </image>
+    <image>
+        <path>film\волк с уолл-стрит.webp</path>
+        <caption>Волк с Уолл-стрит</caption>
+    </image>
+    <image>
+        <path>film\дрянные девчонки.webp</path>
+        <caption>Дрянные девчонки</caption>
+    </image>
+    <image>
+        <path>film\cruela.webp</path>
+        <caption>Круэлла</caption>
+    </image>
+    <image>
+        <path>film\ла-ла ленд.webp</path>
+        <caption>Ла-ла ленд</caption>
+    </image>
+    <image>
+        <path>film\deadpool.webp</path>
+        <caption>Дэдпул</caption>
+    </image>
+    <image>
+        <path>film\тело дженнифер.webp</path>
+        <caption>Тело Дженнифер</caption>
+    </image>
+    <image>
+        <path>film\spiderman.webp</path>
+        <caption>Человек паук</caption>
+    </image>
+    <image>
+        <path>film\терминатор.webp</path>
+        <caption>Терминатор</caption>
+    </image>
+</gallery>

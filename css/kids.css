@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(
+      114.62deg,
+      rgb(82, 60, 213) 11.284%,
+      rgb(181, 146, 237) 69.676%
+    );
+    font-family: Century Gothic;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+  } 
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .title {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: normal;
+    padding: 10px 0 20px 0;
+  }
+  
+  .svg {
+    padding: 0 5px 25px 0;
+  }
+  
+
+  .cover {
+    width: 350px;
+    height: 525px;
+    padding-bottom: 10px;
+  }
+
+  .caption {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .kids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.pagination {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.pagination > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+}
+
+.pagination ul li {
+    font-size: 30px;
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.pagination ul li:first-child {
+    color: #523CD5;
+}
+
+@media(max-width:1200px){
+  h1 {
+    font-size: 4vw;
+  }
+  
+  .svg {
+    padding-right: 0.5vw;
+    padding-left: 3vw;
+  }
+  
+  .caption {
+    font-size: 2vw;
+  }
+
+  .pagination {
+    width: 100vw;
+}
+
+
+}
+
+@media(max-width:1000px) {
+  .caption {
+    font-size: 2.3vw;
+  }
+}
+
+@media(max-width: 930px) {
+  h1 {
+    font-size: 4.5vw;
+  }
+  
+  .svg {
+    padding-left: 5vw;
+  }
+}
+
+@media(max-width:870px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+}
+
+@media(max-width:750px) {
+  .cover{
+    width: 40vw;
+    height: 60vw;
+  }
+
+  .caption {
+    font-size: 2.8vw;
+  }
+
+  h1 {
+    font-size: 5.7vw;
+  }
+
+  .svg {
+    height: 5.7vw;
+  }
+
+  
+}
+
+@media(max-width:530px) {
+  .pagination ul li {
+    font-size: 5vw;
+}
+
+}

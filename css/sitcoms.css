@@ -1,0 +1,215 @@
+body {
+    background: linear-gradient(
+      114.62deg,
+      rgb(82, 60, 213) 11.284%,
+      rgb(181, 146, 237) 69.676%
+    );
+    font-family: Century Gothic;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+  } 
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .title {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: normal;
+    padding: 10px 0 20px 0;
+  }
+  
+  .svg {
+    padding: 0 5px 25px 0;
+  }
+  
+
+  .cover {
+    width: 350px;
+    height: 525px;
+    padding-bottom: 10px;
+  }
+
+  .caption {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .sitcoms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.pagination {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.pagination > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+}
+
+.pagination ul li {
+    font-size: 30px;
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.pagination ul li:first-child {
+    color: #523CD5;
+}
+
+@media(max-width:1200px){
+  h1 {
+    font-size: 4vw;
+  }
+  
+  .svg {
+    padding-right: 0.5vw;
+    padding-left: 3vw;
+  }
+  
+  .caption {
+    font-size: 2vw;
+  }
+
+  .pagination {
+    width: 100vw;
+}
+
+
+}
+
+@media(max-width:1000px) {
+  .caption {
+    font-size: 2.3vw;
+  }
+}
+
+@media(max-width: 930px) {
+  h1 {
+    font-size: 4.5vw;
+  }
+  
+  .svg {
+    padding-left: 5vw;
+  }
+}
+
+@media(max-width:870px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+}
+
+@media(max-width:750px) {
+  .cover{
+    width: 40vw;
+    height: 60vw;
+  }
+
+  .caption {
+    font-size: 2.8vw;
+  }
+
+  h1 {
+    font-size: 5.7vw;
+  }
+
+  .svg {
+    height: 5.7vw;
+  }
+
+  
+}
+
+@media(max-width:530px) {
+  .pagination ul li {
+    font-size: 5vw;
+}
+
+}
+
+
+.hover-effect-cover li {
+  position: relative;
+  width: 350px;
+  height: 525px;
+  display: flex;
+  overflow: hidden;
+}
+
+.hover-effect-cover li h3{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+  margin: 5px;
+}
+.hover-effect-cover li p{
+  color: #fff;
+  margin: 5px;
+  display: flex;
+  justify-content: center
+
+}
+.hover-effect-cover li a {
+  text-decoration: none;
+  color: #fff;
+  background: #454545;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+  padding: 15px;
+}
+.hover-effect-cover li a:hover {
+  background: #523CD5;
+  color: #fff;
+}
+.hover-effect-cover li > div.effect-to-top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hover-effect-cover li:hover > div.effect-to-top {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.hover-effect-cover li div.effect-to-top {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Фон блока при наведении */
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-top {
+  opacity: 1;
+  transform: translate(0px, 0px) rotate(0deg);
+}
